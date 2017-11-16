@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ba.terawatt.xogame" android:installLocation="auto" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/xo_icon"
+        android:label="@string/app_name"
+        android:theme="@style/MyMaterialTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_xogame"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".XOGameVsPlayer"
+            android:label="@string/title_activity_xogame_vs_player" >
+        </activity>
+        <activity
+            android:name=".XOGameActivity"
+            android:label="@string/title_activity_xogame_vs_player" >
+        </activity>
+        <activity android:name=".AboutApp" android:label="ABOUT XO GAME"/>
+    </application>
+
+</manifest>
